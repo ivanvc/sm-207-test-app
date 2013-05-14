@@ -11,11 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130510214353) do
+ActiveRecord::Schema.define(:version => 20130514005626) do
 
   create_table "hourlies", :force => true do |t|
-    t.integer "source_id"
-    t.time    "timestamp"
+    t.integer  "source_id"
+    t.datetime "timestamp"
+  end
+
+  create_table "parents", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "sources", :force => true do |t|
+    t.integer  "parent_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

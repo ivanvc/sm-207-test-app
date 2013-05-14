@@ -38,4 +38,5 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'rspec-rails'
-gem 'shoulda-matchers'
+gem 'shoulda'
+gem 'factory_girl_rails'

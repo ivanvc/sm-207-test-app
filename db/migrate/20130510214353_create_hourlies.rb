@@ -2,7 +2,7 @@ class CreateHourlies < ActiveRecord::Migration
   def up
     create_table :hourlies do |t|
       t.integer :source_id
-      t.time :timestamp
+      t.datetime :timestamp
     end
   end
 
